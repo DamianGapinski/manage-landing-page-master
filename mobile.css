@@ -4,6 +4,11 @@
     :root{
         --Bright-Red: hsl(12, 88%, 59%);
         --Vary-Light-Gray: hsl(0, 0%, 98%);
+        --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+        --Very-Dark-Blue: hsl(233, 12%, 13%);
+        --Very-Pale-Red: hsl(13, 100%, 96%);
+        --Vary-Light-Gray: hsl(0, 0%, 98%);
+        --Dark-Blue: hsl(228, 39%, 23%);
     }
 
     *{
@@ -11,12 +16,20 @@
         padding: 0;
         box-sizing: border-box;
         font-family:'BeVietnamPro', sans-serif;
-        font-weight: 400,500,700;
+        
     }
     
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200vh;
+        width: 100%;
+    }
+
     header{
         width: 100%;
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -55,6 +68,16 @@
    }
    .leftTopBox{
        width: 80%;
+   }
+
+   h1,h2{
+    color: var(--Dark-Blue);
+    font-weight: 700;
+   }
+
+   .leftTopBox:nth-child(2){
+       width: 70%;
+       line-height: 1.5;
    }
    .rightTopBtn{
        border-radius: 50px;
